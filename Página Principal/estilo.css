@@ -1,0 +1,55 @@
+/* Rodape da página principal */
+
+/*"item menu referente aos itens no rodapé da pagina principal"*/
+.item-menu {
+    margin: 0 10px;
+}
+
+/*"navegação é referente ao header, o rodapé em sí, onde fica a cor e as margens*/
+
+.navegacao a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navegacao {
+    background-color: #008612;
+    margin: 0;
+    padding: 10px;
+}
+
+/*"menu é referente a lista de itens do rodapé da pagina principal"*/
+.menu {
+    list-style-type: none;
+    margin: 1px;
+    padding: 1px;
+    display: flex;
+    justify-content: right;
+}
+
+/* O Body é referente a página em sí e suas configurações, como margens, padding e fonte*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+/*é o conteúdo principal, os itens*/
+
+.conteudo-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
