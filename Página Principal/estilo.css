@@ -111,9 +111,9 @@ body {
     padding: 10px 300px 50px 300px;
 }
 
-/* O recomendacoes é referente a terceira seção da página principal, onde ficam os cards com os cursos*/
+/* O recomendacoes é referente a te0px 200px 50px 500pxrceira seção da página principal, onde ficam os cards com os cursos*/
 
-#recomendacoes {
+.subtitulos-p {
     font-size: 40px;
     text-align: left;
     color: #000000;
@@ -123,7 +123,7 @@ body {
 
 /*é referente a seção de cursos Populares, onde ficam os cards com os cursos*/
 
-.lista-cursos {
+#lista-cursos {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -172,4 +172,49 @@ body {
     border-radius: 15px 15px 0 0;
     display: block;
     padding: 12px;
+}
+
+#subtitulo-recurso {
+    font-size: 25px;
+    text-align: left;
+    margin: 0;  
+}
+
+#recursos-da-plataforma {
+    display: flex;
+    flex-direction: row;      /* antes: column */
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+    align-self: flex-end;    
+    align-items: center;
+    text-align: right;
+    margin-top: 20px;
+}
+
+#recursos-da-plataforma .subtitulos-p {
+    text-align: right;
+    width: 100%;
+}
+
+/*é referente a seção de recursos da plataforma, onde ficam os itens que mostram os recursos da plataforma*/
+
+.lista-p {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex: 1;                 
+}
+
+.item-recurso {
+    font-size: 22px;
+    margin-bottom: 10px;
+    border: #008612 2px solid;
+    border-radius: 10px;
+    color: #000000;
+    font-weight: normal;
+    padding: 30px 25px 30px 25px;
+    text-align: left;
+
 }
