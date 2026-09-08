@@ -111,7 +111,17 @@ body {
     padding: 10px 300px 50px 300px;
 }
 
-/*é referente a seção de cursos recomendados, onde ficam os cards com os cursos*/
+/* O recomendacoes é referente a terceira seção da página principal, onde ficam os cards com os cursos*/
+
+#recomendacoes {
+    font-size: 40px;
+    text-align: left;
+    color: #000000;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+/*é referente a seção de cursos Populares, onde ficam os cards com os cursos*/
 
 .lista-cursos {
     display: flex;
@@ -121,7 +131,7 @@ body {
     justify-content: flex-start;
 }
 
-/*é referente a seção de cursos recomendados, onde ficam os cards com os cursos*/
+/*é referente a seção de cursos Populares, onde ficam os cards com os cursos*/
 
 .card {
     width: 300px;
