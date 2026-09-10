@@ -2,7 +2,7 @@
 
 * { box-sizing: border-box; }
 
-/*"item menu referente aos itens no rodapé da pagina principal"*/
+/*"item menu referente aos itens no cabeçario da pagina principal"*/
 .item-menu {
     margin: 0 10px;
 }
@@ -11,22 +11,25 @@
     color: #ffffffc0;
 }
 
-/*"navegação é referente ao header, o rodapé em sí, onde fica a cor e as margens*/
+/*"navegação é referente ao header, o cabeçario em sí, onde fica a cor e as margens*/
 
 .navegacao a {
     color: #ffffff;
-    font-size: 18px;
+    font-size: 20px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .navegacao {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     background-color: #008612;
     margin: 0;
-    padding: 20px 300px 10px 300px;
+    padding: 10px clamp(16px, 8vw, 300px) 50px;
 }
 
-/*"menu é referente a lista de itens do rodapé da pagina principal"*/
+/*"menu é referente a lista de itens do cabeçario da pagina principal"*/
 .menu {
     flex-wrap: wrap;
     list-style-type: none;
@@ -36,15 +39,7 @@
     justify-content: right;
 }
 
-.logo {
-    display: flex;
-    flex-direction: column;
-    font-size: 24px;
-    font-weight: bold;
-    color: #ffffff;
-    margin-right: auto;
-    margin-top: -5px;
-}
+
 
 /* O Body é referente a página em sí e suas configurações, como margens, padding e fonte*/
 
@@ -54,6 +49,8 @@ body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
 }
+
+
 
 /* O banner-inicial é referente a primeira seção da página principal, onde fica o título e subtítulo da página*/
 
@@ -65,7 +62,7 @@ body {
     gap: 15px;
     min-height: 100px;
     background-color: #008612;
-    padding: 10px 300px 50px 300px;
+    padding: 20px 300px 10px 300px;
 }
 
 #chamada-inicial {
@@ -101,6 +98,8 @@ body {
     color: #ffffff;
 }
 
+
+
 /* O menu-principal é referente a segunda seção da página principal, onde ficam os cards com os cursos*/
 
 .menu-principal {
@@ -108,12 +107,10 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding: 10px 300px 50px 300px;
+    padding: 20px 300px 10px 300px;
 }
 
-/* O recomendacoes é referente a te0px 200px 50px 500pxrceira seção da página principal, onde ficam os cards com os cursos*/
-
-.subtitulos-p {
+.subtitulos-principais {
     font-size: 40px;
     text-align: left;
     color: #000000;
@@ -121,22 +118,21 @@ body {
     margin-bottom: 20px;
 }
 
+
+
 /*é referente a seção de cursos Populares, onde ficam os cards com os cursos*/
 
-#lista-cursos {
+.lista-cards {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     width: 100%;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
-/*é referente a seção de cursos Populares, onde ficam os cards com os cursos*/
-
 .card {
-    width: 300px;
     background-color: #f5f5f5;
-    border-radius: 20px;
+    border-radius: 25px;
     padding: 16px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
 
@@ -148,7 +144,9 @@ body {
 }
 
 .botao-card {
-    display: inline-block;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
     padding: 10px 20px;
     border: 2px solid #008612;
     border-radius: 5px;
@@ -166,55 +164,61 @@ body {
 }
 
 .imagem-curso {
-    width: 250px;
-    height: 160px;
+    width: 100%;
+    max-width: 250px;
     object-fit: contain;
     border-radius: 15px 15px 0 0;
     display: block;
     padding: 12px;
 }
 
-#subtitulo-recurso {
-    font-size: 25px;
-    text-align: left;
+
+
+
+.banner-pagina, #banner-recurso {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: #008612;
+    padding: 10px 30px 30px;
+    margin-top: 30px;
+    border: 10px #008612 solid;
+    border-radius: 30px;
+    
+}
+
+#chamada-recursos,#descricao-recursos,.lista-pagina {
+        width: 75%;
+}
+
+#chamada-recursos {
+    color: white;
+    font-size: 45px;
+    font-weight: bolder;
     margin: 0;  
 }
 
-#recursos-da-plataforma {
-    display: flex;
-    flex-direction: row;      /* antes: column */
-    flex-wrap: wrap;
-    gap: 20px;
-    width: 100%;
-    justify-content: space-between;
-    align-self: flex-end;    
-    align-items: center;
-    text-align: right;
-    margin-top: 20px;
-}
-
-#recursos-da-plataforma .subtitulos-p {
-    text-align: right;
-    width: 100%;
-}
-
-/*é referente a seção de recursos da plataforma, onde ficam os itens que mostram os recursos da plataforma*/
-
-.lista-p {
-    list-style-type: none;
+#descricao-recursos {
+    color: white;
+    font-size: 25px;
     margin: 0;
-    padding: 0;
-    flex: 1;                 
+    font-weight: lighter;
+}
+
+.lista-pagina {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    list-style-type:upper-roman;
 }
 
 .item-recurso {
-    font-size: 22px;
-    margin-bottom: 10px;
-    border: #008612 2px solid;
-    border-radius: 10px;
-    color: #000000;
-    font-weight: normal;
-    padding: 30px 25px 30px 25px;
-    text-align: left;
-
+    color: white;
+    font-size: 28px;
+    padding-top: 5px;
+    font-weight: bold;
 }
+
+

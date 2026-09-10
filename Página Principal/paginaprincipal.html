@@ -12,7 +12,6 @@
     <header class="navegacao">
         <nav>
             <ul class="menu"> <!--"menu é referente a lista de itens do rodapé da pagina principal"-->
-                <p class="logo">Logo</p>
                 <li class="item-menu"><a href="paginaprincipal.html">Página Principal</a></li>
                 <li class="item-menu"><a href="arvoredeaprendizagem.html">Árvore de Aprendizagem</a></li>
                 <li class="item-menu"><a href="certificado.html">Peça seu Certificado</a></li>
@@ -31,18 +30,18 @@
         </div>
 
 
-        
+
         <!--"menu-principal é referente a segunda seção da página principal, onde ficam os cards com os cursos"-->
         <div class="menu-principal">
-            <h2 class="subtitulos-p">Cursos Populares na Plataforma</h2>
+            <h2 class="subtitulos-principais">Cursos Populares na Plataforma</h2>
 
             <!--"cursosrecomendados é referente a seção de cursos recomendados, onde ficam os cards com os cursos"-->
-            <div id="lista-cursos">
+            <div class="lista-cards">
 
                 <div class="card"> <!--"card é referente a cada card individual, onde fica o curso (ENGENHARIA DE SOFTWARE)"-->
                     <div class="corpo-card">
                         <img src="./imagens/Logo-ES-Fundo-branco.png" alt="simbolo-engenharia-de-software.jpg" class="imagem-curso">
-                        <h3 class="titulo-curso">Engenharia de Software</h3>
+                        <h3 class="titulo-card">Engenharia de Software</h3>
                         <p class="descricao-curso">bla bla bla bla bla</p>
                     </div>
                     <div class="rodape-card">
@@ -53,7 +52,7 @@
                 <div class="card"> <!--"card é referente a cada card individual, onde fica o curso (PROGRAMAÇÃO WEB)"-->
                     <div class="corpo-card">
                         <img src="./imagens/web.png" alt="simbolo-programacao-web.jpg" class="imagem-curso">
-                        <h3 class="titulo-curso">Programação Web</h3>
+                        <h3 class="titulo-card">Programação Web</h3>
                         <p class="descricao-curso">bla bla bla bla bla</p>
                     </div>
                     <div class="rodape-card">
@@ -64,7 +63,7 @@
                 <div class="card"> <!--"card é referente a cada card individual, onde fica o curso (ARQUITETURA DE SOFTWARE)"-->
                     <div class="corpo-card">
                         <img src="./imagens/arquitetura.png" alt="simbolo-arquitetura-de-software.jpg" class="imagem-curso">
-                        <h3 class="titulo-curso">Arquitetura de Software</h3>
+                        <h3 class="titulo-card">Arquitetura de Software</h3>
                         <p class="descricao-curso">bla bla bla bla bla</p>
                     </div>
                     <div class="rodape-card">
@@ -75,7 +74,7 @@
                 <div class="card"> <!--"card é referente a cada card individual, onde fica o curso (LINGUA EXTRANGEIRA)"-->
                     <div class="corpo-card">
                         <img src="./imagens/ingles.png" alt="simbolo-lingua-extrangeira.jpg" class="imagem-curso">
-                        <h3 class="titulo-curso">Lingua Extrangeira (ingles)</h3>
+                        <h3 class="titulo-card">Lingua Extrangeira (ingles)</h3>
                         <p class="descricao-curso">bla bla bla bla bla</p>
                     </div>
                     <div class="rodape-card">
@@ -85,13 +84,61 @@
 
             </div>
 
-            <div id="recursos-da-plataforma"> <!--"recursos-da-plataforma é referente a seção de recursos da plataforma, onde ficam os itens que mostram os recursos da plataforma"-->
-                <h2 id="subtitulo-recurso">Recursos da Plataforma</h2>
-                <ul class="lista-p">
-                    <li class="item-recurso"><strong>Conteúdo:</strong> Cursos de alta qualidade com professores especializados atendem as nescessidades do mercado de trabalho.</li>
-                    <li class="item-recurso"><strong>Suporte do Aluno:</strong> Oferemos certificados para comprovar seu término além de oferecermos suporte e acompanhamento para o aluno.</li>
-                    <li class="item-recurso"><strong>Comunidade:</strong> Uma enorme comunidade em nossas plataformas prontos para oferecer ajuda, incentivar projetos e auxiliar no aprimoramento da plataforma.</li>
+            <div id="banner-recursos" class="banner-pagina"> <!--"recursos-da-plataforma é referente a seção de recursos da plataforma, onde ficam os itens que mostram os recursos da plataforma"-->
+                <h2 id="chamada-recursos">Aprender pode ser difícil, <br>mas nós facilitamos isso para você!</h2>
+                <p id="descricao-recursos">Aprendizado de qualidade com os diversos recursos 
+                    que oferecemos em nossa plataforma para entrar de vez no mercado de trabalho, 
+                    escolha o caminho que mais combina com você!</p>
+                <ul class="lista-pagina">
+                    <li class="item-recurso">Cursos de Alta Qualidade e <br>Professores Qualificados.</li>
+                    <li class="item-recurso">Certificados com Validação Online.</li>
+                    <li class="item-recurso">Trilhas de Aprendizagem para <br>Escolher como Seguir.</li>
+                    <li class="item-recurso">Comunidade Ativa e Apoiadora <br>Que ajuda a Progredir.</li>
                 </ul>
+                <a href="arvore.html" class="botao">Escolha seu Aprendizado</a>
+            </div>
+
+            <div id="comunidade">
+                <h2 class="subtitulos-principais">Participe agora da nossa comunidade em nossas Plataformas!</h2>
+                    <p id="descricao-comunidade">Adentre já nas plataformas digitais em que estamos presentes, recebendo todo o apoio e carinho da nossa
+                        comunidade, fique sempre por dentro de novidades dos cursos disponíveis e os que irão ser adicionados, 
+                        e ainda nos ajudando a sempre evoluir, trazendo a melhor experiência para nossos Alunos!
+                    </p>
+
+                    
+                <div class="lista-cards">
+
+                    <div class="card" id="plataformas-comunidade">
+                        <div class="corpo-card">
+                            <h3 class="titulo-card">Discord</h3>
+                            <p>Entre em nosso canal do Discord!</p>
+                        </div>
+                        <div class="rodape-card">
+                            <a href="direcionar.html" class="botao-card">Entre na Comunidade</a>
+                        </div>
+                    </div>
+
+                    <div class="card" id="plataformas-comunidade">
+                        <div class="corpo-card">
+                            <h3 class="titulo-card">Whatsapp</h3>
+                            <p>Receba novidades pelo Whatsapp!</p>
+                        </div>
+                        <div class="rodape-card">
+                            <a href="direcionar.html" class="botao-card">Entre na Comunidade</a>
+                        </div>
+                    </div>
+
+                    <div class="card" id="plataformas-comunidade">
+                        <div class="corpo-card">
+                            <h3 class="titulo-card">Reddit</h3>
+                            <p>Seja ativo no nosso subreddit!</p>
+                        </div>
+                        <div class="rodape-card">
+                            <a href="direcionar.html" class="botao-card">Entre na Comunidade</a>
+                        </div>
+                    </div>
+                    
+
             </div>
 
         </div>
