@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="icon" href="../imagens/logositepequeno.png">
+    <link rel="stylesheet"
+    type="text/css"
+    href="./login.css">
+    <link rel="stylesheet"
+    type="text/css"
+    href="../geral.css">
+</head>
+
+<body>
+    <header class="navegacao">
+        <nav>
+            <img src="../imagens/logosite.png" alt="logo-site.png" class="logo-cabecario">
+            <ul class="menu"> <!--"menu é referente a lista de itens do cabeçario da pagina principal"-->
+                <li class="item-menu"><a href="paginaprincipal.html">Página Principal</a></li>
+                <li class="item-menu"><a href="arvoredeaprendizagem.html">Árvore de Aprendizagem</a></li>
+                <li class="item-menu"><a href="certificado.html">Peça seu Certificado</a></li>
+                <li class="item-menu"><a href="cursos.html">Cursos</a></li>
+                <li class="item-menu"><a href="sobre.html">Sobre</a></li>
+                <li class="item-menu"><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <div class="menu-principal">
+
+            <div class="login">
+                <h1>Entrar</h1>
+                <form action="login.html" method="post" class="form-login">
+                    <input type="text" name="email" placeholder="seuemail@conta.com" required>
+                    <input type="password" name="senha" placeholder="Sua Senha" required>
+                    <div class="linha">
+                        <input type="checkbox" name="lembrar" class="lembrar" checked>
+                        <label for="lembrar" class="lembrar">Lembrar de Mim</label>
+                    </div>
+                    <button class="botao-login" type="submit">Entrar</button>
+                </form>
+                <div class="linha">
+                    <a href="recuperar-senha">Esqueci minha senha</a>
+                    <a href="cadastro">Cadastrar</a>
+                </div>
+            </div>
+
+        </div>

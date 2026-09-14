@@ -1,0 +1,67 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #008612;
+    padding: 30px 50px 120px;
+    border-radius: 25px;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+/* .linha é referente aos itens que ficam lado a lado dentro da coluna */
+.linha {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: left;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+.botao-login {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #008612;
+}
+
+.botao-login:hover {
+    background-color: #008612;
+    color: #ffffff;
+}
+
+.lembrar {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    flex-direction: row;
+}
