@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Recuperar Senha</title>
 
     <link rel="icon" href="../imagens/logosite.png">
     <link rel="stylesheet"
@@ -29,26 +29,19 @@
         </nav>
     </header>
 
-        <div class="menu-principal">
-
-            <div class="login">
-                <img src="../imagens/logositemediano.png" alt="logo-site.png" class="logo-rodape">
-                <h1>Entrar</h1>
-                <form action="login.html" method="post" class="form-login">
-                    <label for="email" class="lembrar">Email</label>
-                    <input type="text" name="email" placeholder="seuemail@conta.com"  required>
-                    <label for="senha" class="lembrar">Senha</label>
-                    <input type="password" name="senha" placeholder="Sua Senha" required>
-                    <div class="linha">
-                        <input type="checkbox" name="lembrar" class="lembrar" checked>
-                        <label for="lembrar" class="lembrar">Lembrar de Mim</label>
-                    </div>
-                    <button class="botao-login" type="submit">Entrar</button>
-                </form>
+    <div class="menu-principal">
+        <div class="login" id="recuperar-senha">
+            <img src="../imagens/logositemediano.png" alt="logo-site.png" class="logo-rodape" id="logo-rodape">
+            <h1>Problemas na conta?</h1>
+            <p>Insira seu email ou nome de usuário e clique em "Redefinir Senha" para receber um link para redefinir sua senha.</p>
+            <form action="recuperar-senha.html" method="post" class="form-login" id="recuperar">
+                <label for="email" class="lembrar">Nome de usuário ou email</label>
+                <input type="text" name="email" placeholder="Nome de usuario ou email"  required>
                 <div class="linha">
-                    <a href="recuperar-senha" id="botao-recuperar">Esqueci minha senha</a>
-                    <a href="cadastro" >Cadastrar</a>
+                    <button class="botao-login" type="submit">Redefinir Senha</button>
                 </div>
-            </div>
-
+            </form>
         </div>
+    </div>    
+</body>
+</html>
