@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Senha</title>
+
+    <link rel="icon" href="../imagens/logosite.png">
+    <link rel="stylesheet"
+    type="text/css"
+    href="./login.css">
+    <link rel="stylesheet"
+    type="text/css"
+    href="../geral.css">
+</head>
+
+<body>
+    <header class="navegacao">
+        <nav>
+            <img src="../imagens/logosite.png" alt="logo-site.png" class="logo-cabecario">
+            <ul class="menu"> <!--"menu é referente a lista de itens do cabeçario da pagina principal"-->
+                <li class="item-menu"><a href="paginaprincipal.html">Página Principal</a></li>
+                <li class="item-menu"><a href="arvoredeaprendizagem.html">Árvore de Aprendizagem</a></li>
+                <li class="item-menu"><a href="certificado.html">Peça seu Certificado</a></li>
+                <li class="item-menu"><a href="cursos.html">Cursos</a></li>
+                <li class="item-menu"><a href="sobre.html">Sobre</a></li>
+                <li class="item-menu"><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="menu-principal">
+        <div class="login" id="recuperar-senha">
+            <img src="../imagens/logositemediano.png" alt="logo-site.png" class="logo-rodape" id="logo-rodape">
+            <h1>Problemas na conta?</h1>
+            <p>Insira seu email ou nome de usuário e clique em "Redefinir Senha" para receber um link para redefinir sua senha.</p>
+            <form action="recuperar-senha.html" method="post" class="form-login" id="recuperar">
+                <label for="email" class="lembrar">Nome de usuário ou email</label>
+                <input type="text" name="email" placeholder="Nome de usuario ou email"  required>
+                <div class="linha">
+                    <button class="botao-login" type="submit">Redefinir Senha</button>
+                </div>
+            </form>
+        </div>
+    </div>    
+</body>
+</html>
