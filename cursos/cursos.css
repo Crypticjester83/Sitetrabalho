@@ -17,7 +17,7 @@
 
     display: flex;
     align-items: center;
-    gap: 220px;
+    gap: 750px;
 }
 
 .imagemNome{
@@ -51,7 +51,10 @@
     align-items: center;
     justify-content: center;
 
-    margin-right: 35px;
+    margin-right: 65px;
 }
 
+.descrição{
+    max-width: 400px;
+}
 
