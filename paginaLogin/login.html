@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 
-    <link rel="icon" href="../imagens/logosite.png">
+    <link rel="icon" href="../imagens/logositepequeno.png">
     <link rel="stylesheet"
     type="text/css"
     href="./login.css">
@@ -19,10 +19,10 @@
         <nav>
             <img src="../imagens/logosite.png" alt="logo-site.png" class="logo-cabecario">
             <ul class="menu"> <!--"menu é referente a lista de itens do cabeçario da pagina principal"-->
-                <li class="item-menu"><a href="paginaprincipal.html">Página Principal</a></li>
+                <li class="item-menu"><a href="../paginaPrincipal/paginaprincipal.html">Página Principal</a></li>
                 <li class="item-menu"><a href="arvoredeaprendizagem.html">Árvore de Aprendizagem</a></li>
                 <li class="item-menu"><a href="certificado.html">Peça seu Certificado</a></li>
-                <li class="item-menu"><a href="cursos.html">Cursos</a></li>
+                <li class="item-menu"><a href="../cursos/cursos.html">Cursos</a></li>
                 <li class="item-menu"><a href="sobre.html">Sobre</a></li>
                 <li class="item-menu"><a href="login.html">Login</a></li>
             </ul>
@@ -32,12 +32,9 @@
         <div class="menu-principal">
 
             <div class="login">
-                <img src="../imagens/logositemediano.png" alt="logo-site.png" class="logo-rodape">
                 <h1>Entrar</h1>
                 <form action="login.html" method="post" class="form-login">
-                    <label for="email" class="lembrar">Email</label>
-                    <input type="text" name="email" placeholder="seuemail@conta.com"  required>
-                    <label for="senha" class="lembrar">Senha</label>
+                    <input type="text" name="email" placeholder="seuemail@conta.com" required>
                     <input type="password" name="senha" placeholder="Sua Senha" required>
                     <div class="linha">
                         <input type="checkbox" name="lembrar" class="lembrar" checked>
@@ -46,9 +43,10 @@
                     <button class="botao-login" type="submit">Entrar</button>
                 </form>
                 <div class="linha">
-                    <a href="recuperar-senha" id="botao-recuperar">Esqueci minha senha</a>
-                    <a href="cadastro" >Cadastrar</a>
+                    <a href="recuperar_senha.html" id="botao-recuperar">Esqueci minha senha</a>
+                    <a href="cadastrar.html">Cadastrar</a>
                 </div>
             </div>
-
         </div>
+    </div>
+</body>

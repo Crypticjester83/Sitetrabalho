@@ -1,0 +1,291 @@
+/* O banner-inicial é referente a primeira seção da página principal, onde fica o título e subtítulo da página*/
+
+#banner-inicial {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+    min-height: 100px;
+    background-color: #008612;
+    width: 100%;
+    height: 600px;
+    padding: 20px 300px 10px 300px;
+}
+
+#chamada-inicial {
+    font-size: 75px;
+    text-align: left;
+    color: #ffffff;
+    font-weight: bolder;
+
+}
+
+#subtitulo-inicial {
+    font-size: 20px;
+    margin-top: -20px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #008612;
+    border: 2px solid #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.botao:hover {
+    background-color: #008612;
+    color: #ffffff;
+}
+
+/*é referente a seção de cursos Populares, onde ficam os cards com os cursos*/
+
+.lista-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.card {
+    display: block;
+    width: 300px;
+    height: 400px;
+    background-color: #f5f5f5;
+    border-radius: 25px;
+    padding: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+
+}
+
+.corpo-card {
+    padding: 20px 8px 8px;
+    text-align: center;
+}
+
+.botao-card {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: 2px solid #008612;
+    border-radius: 5px;
+    background-color: #008612;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+
+.botao-card:hover {
+    background-color: #ffffff;
+    color: #008612;
+}
+
+.imagem-curso {
+    width: 100%;
+    max-width: 220px;
+    height: 180px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    padding: 8px;
+}
+
+
+
+
+.banner-pagina{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px; 
+    background-color: #008612;
+    padding: 10px 30px 30px;
+    margin-top: 30px;
+    border-radius: 30px;
+    
+}
+
+#chamada-recursos,#descricao-recursos,.lista-pagina, #chamada-cursos, #paragrafo-cursos {
+        width: 75%;
+}
+
+#chamada-recursos {
+    color: white;
+    font-size: 45px;
+    font-weight: bolder;
+    margin: 0;  
+}
+
+#descricao-recursos {
+    color: white;
+    font-size: 25px;
+    margin: 0;
+    font-weight: lighter;
+}
+
+.lista-pagina {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    list-style-type:upper-roman;
+}
+
+.item-recurso {
+    color: white;
+    font-size: 28px;
+    padding-top: 5px;
+    font-weight: bold;
+}
+
+
+
+
+
+.lista-cards-plataforma{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.card-plataformas{
+    background-color: #f5f5f5;
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+
+}
+
+.corpo-card-plataformas {
+    width: 250px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.titulo-card-plataformas {
+    font-size: 20px;
+    margin: 0;
+}
+
+.corpo-card-plataformas p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.botao-card {
+    display: block;
+    width: fit-content;
+    margin-top: 0%;
+    padding: 10px 20px;
+    border: 2px solid #008612;
+    border-radius: 5px;
+    background-color: #008612;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.imagem-plataforma {
+    width: 100px;
+    height: 90px;
+    object-fit: contain;
+    display: block;
+    padding: 0;
+}
+
+.logo-rodape {
+    width: 90px;
+    height: auto;
+    object-fit: contain;
+    align-self: center;
+    flex-shrink: 0;
+}
+
+
+
+
+#chamada-cursos {
+    color: white;
+    font-size: 45px;
+    font-weight: bolder;
+    margin: 0;  
+}
+
+#paragrafo-cursos {
+    color: white;
+    font-size: 25px;
+    margin: 0;
+    font-weight: lighter;
+}
+
+
+
+#avaliacao {
+    background-color: #004409;
+    padding: 30px;
+}
+
+.lista-curso {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    list-style-type:disc;
+}
+
+.lista-cards-avaliacao {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    justify-content: flex-start;
+
+}
+
+.card-avaliacao {
+    background-color:#008612;
+    border-radius: 25px;
+    padding: 20px 25px 20px 25px;
+}
+
+.corpo-card-avaliacao {
+    width: 350px;
+    height: 180px;
+    text-align: center;
+    margin-bottom: 0%;
+}
+
+.titulo-card-avaliacao {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.cargo-pessoa {
+    color: #dddddd;
+    font-size: 15px;
+}
+
+.descricao-avaliacao {
+    font-size: 15px;
+    color: #ffffff;
+}
