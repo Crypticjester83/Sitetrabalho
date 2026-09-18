@@ -1,0 +1,70 @@
+.login-recuperar-senha {
+    width: 600px;
+    height: auto;
+    padding-top: 30px; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: #008612;
+    border-radius: 25px;
+    margin-top: 100px;
+    padding-bottom: 35px;
+}
+
+
+#texto-recuperar-senha {
+    color: #ffffff;
+    font-size: 18px;
+    align-self: flex-start;
+}
+
+#recuperar {
+    width: 600px;
+    align-items: flex-start;
+    margin-left: 100px;   
+}
+
+.recuperar {
+    color: #ffffff;
+    font-size: 18px;
+    padding-top: 1px;
+}
+
+.form-recuperar-senha {
+    width: 400px;
+    align-items: flex-start;
+    margin-left: 50px; 
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+.botao-recuperar-senha {
+    display: block;
+    width: 300px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    background-color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    color: #008612;
+}
+
+.botao-recuperar-senha:hover {
+    background-color: #008612;
+    color: #ffffff;
+}
+
+.logo-rodape {
+    width: 90px;
+    height: auto;
+    object-fit: contain;
+    align-self: flex-start;
+    margin-left: 50px;
+}
