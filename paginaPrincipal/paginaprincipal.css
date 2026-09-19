@@ -152,7 +152,11 @@
 
 
 
-
+.descricao-curso {
+    font-size: 15px;
+    margin: 0;
+    font-weight: lighter;
+}
 
 .lista-cards-plataforma{
     display: flex;
@@ -254,25 +258,28 @@
 }
 
 .lista-cards-avaliacao {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
     width: 100%;
-    justify-content: flex-start;
-
 }
 
 .card-avaliacao {
     background-color:#008612;
     border-radius: 25px;
     padding: 20px 25px 20px 25px;
+    display: flex;
+    align-items: stretch;
 }
 
 .corpo-card-avaliacao {
-    width: 350px;
-    height: 180px;
+    width: 100%;
+    min-height: 180px;
     text-align: center;
     margin-bottom: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .titulo-card-avaliacao {

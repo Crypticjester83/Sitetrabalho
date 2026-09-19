@@ -12,77 +12,12 @@
     padding-bottom: 35px;
 }
 
-#recuperar-senha {
-    width: 600px;
-}
-
 .form-login {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 12px;
-}
-
-#recuperar {
-    width: 600px;
-    align-items: flex-start;
-    margin-left: 100px;   
-}
-
-p {
-    color: #ffffff;
-    font-size: 18px;
-    margin-left: 50px;
-    margin-top: 0;
-    align-self: flex-start;
-    width: 75%;
-}
-
-label {
-    align-self: flex-start;
-}
-
-input[type="text"], input[type="password"] {
-    width: 300px;
-    height: 40px;
-    border: 2px solid #ffffff;
-    border-radius: 10px;
-    padding: 10px;
-    resize: none;
-}
-
-input[type="checkbox"] {
-    width: 15px;
-    height: 15px;
-}
-
-a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
-    flex-direction: row;
-}
-
-h1 {
-    display: flex;
-    font-size: 50px;
-    align-self: flex-start;
-    color: #ffffff;
-    font-weight: bolder;
-    margin-top: 30px; 
-    margin-left: 50px;
-    margin-bottom: 20px;
-}
-
-.linha {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    align-self: flex-start;
-    gap: 10px;
 }
 
 #botao-recuperar {
@@ -113,13 +48,5 @@ h1 {
     color: #ffffff;
     font-size: 18px;
     padding-top: 1px;
-}
-
-.logo-rodape {
-    width: 90px;
-    height: auto;
-    object-fit: contain;
-    align-self: flex-start;
-    margin-left: 50px;
-}
+}   
 
