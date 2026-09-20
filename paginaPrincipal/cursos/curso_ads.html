@@ -1,69 +1,135 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Page Title</title>
-
+  <title>Arquitetura de Software</title>
+  <link rel="icon" href="/imagens/logositepequeno.png">
   <link rel="stylesheet"
     type="text/css"
-    href="./cursos_styles.css">
-    <link rel="stylesheet" href="../../geral.css">
+    href="/paginaPrincipal/cursos/cursos_styles.css">
+    <link rel="stylesheet" href="/geral.css">
 </head>
+
 <body>
-  <header class="navegacao">
+    <header class="navegacao">
         <nav>
-            <img src="../imagens/logosite.png" alt="logo-site.png" class="logo-cabecario">
-            <ul class="menu"> <!--"menu é referente a lista de itens do rodapé da pagina principal"-->
-                <li class="item-menu"><a href="../paginaprincipal.html">Página Principal</a></li>
-                <li class="item-menu"><a href="arvoredeaprendizagem.html">Árvore de Aprendizagem</a></li>
+            <img src="/imagens/logosite.png" alt="logo-site.png" class="logo-cabecario">
+            <ul class="menu"> <!--"menu é referente a lista de itens do cabeçario da pagina principal"-->
+                <li class="item-menu"><a href="/paginaPrincipal/paginaprincipal.html">Página Principal</a></li>
+                <li class="item-menu"><a href="/paginaArvoreCursos/pagina-arvore-cursos.html">Árvore de Aprendizagem</a></li>
                 <li class="item-menu"><a href="certificado.html">Peça seu Certificado</a></li>
-                <li class="item-menu"><a href="../../cursos/cursos.html">Cursos</a></li>
-                <li class="item-menu"><a href="../paginaLogin/login.html">Login</a></li>
+                <li class="item-menu"><a href="/cursos/cursos.html">Cursos</a></li>
                 <li class="item-menu"><a href="sobre.html">Sobre</a></li>
+                <li class="item-menu"><a href="/paginaLogin/login.html">Login</a></li>
             </ul>
         </nav>
-  </header>
+    </header>
 
   <main class="main">
     <h1 class="nome-curso">Arquitetura de Software</h1>
 
-  <div class="stats">
-      <div class="caixa">
-        <h1 class="info">100h</h1>
-        <h4 class="subinfo">Carga horaria</h4>
-      </div>
-      <div class="caixa">
-        <h1 class="info">953</h1>
-        <h4 class="subinfo">Alunos</h4>
-      </div>
-      <div class="caixa">
-        <h1 class="info">7,0</h1>
-        <h4 class="subinfo">Nota media</h4>
-      </div>
-      <div class="caixa">
-        <h1 class="info">5</h1>
-        <h4 class="subinfo">Matérias</h4>
-      </div>
-  </div>
-
-  <div class = "Centralizadordoresumo">
-    <div class="ContainerResumo">
-        <div class="Texto">
-            <h1 class="resumo-curso">Resumo do Curso:</h1>
-            <p class = "resumo">O curso de Arquitetura de Software prepara profissionais para planejar, estruturar e organizar sistemas de forma eficiente e escalável. Durante a formação, os estudantes aprendem padrões arquiteturais, princípios de projeto, integração de sistemas, microsserviços, segurança e boas práticas de desenvolvimento. O curso também desenvolve habilidades de análise, tomada de decisões e resolução de problemas. Por meio de projetos práticos, os alunos aprendem a criar arquiteturas confiáveis, flexíveis e preparadas para diferentes necessidades.</p>
+    <div class="stats">
+        <div class="caixa">
+          <h3 class="info">100h</h3>
+          <h4 class="subinfo">Carga horaria</h4>
         </div>
-
-        <img class="image" src="https://upload.wikimedia.org/wikipedia/commons/6/64/Coding_Shots_Annual_Plan_high_res-5.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original" alt="" />
+        <div class="caixa">
+          <h3 class="info">953</h3>
+          <h4 class="subinfo">Alunos</h4>
+        </div>
+        <div class="caixa">
+          <h3 class="info">7,0</h3>
+          <h4 class="subinfo">Nota media</h4>
+        </div>
+        <div class="caixa">
+          <h3 class="info">5</h3>
+          <h4 class="subinfo">Matérias</h4>
+        </div>
     </div>
-  </div>
-    
-  <div class = HolderBotao>
-    <div class = botao>Matricular Agora</div>
-  </div>
+
+    <div class = "Centralizadordoresumo">
+      <div class="ContainerResumo">
+          <div class="Texto">
+              <h1 class="resumo-curso">Resumo do Curso:</h1>
+              <p class = "resumo">O curso de Arquitetura de Software prepara profissionais para planejar, estruturar e organizar sistemas de forma eficiente e escalável. Durante a formação, os estudantes aprendem padrões arquiteturais, princípios de projeto, integração de sistemas, microsserviços, segurança e boas práticas de desenvolvimento. O curso também desenvolve habilidades de análise, tomada de decisões e resolução de problemas. Por meio de projetos práticos, os alunos aprendem a criar arquiteturas confiáveis, flexíveis e preparadas para diferentes necessidades.</p>
+          </div>
+
+          <img class="image" src="https://upload.wikimedia.org/wikipedia/commons/6/64/Coding_Shots_Annual_Plan_high_res-5.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original" alt="" />
+      </div>
+    </div>
+      
+    <!--####################################### GRADE CURRICULAR #######################################-->
+    <div class="grade-cursos">
+      <h1 class="titulo-grade">Grade Curricular</h1>
+      <table class="tabela-grade">
+        <thead>
+          <tr>
+            <th>Módulo</th>
+            <th>Carga Horária</th>
+            <th>Nível</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Fundamentos de Arquitetura de Software</td>
+            <td>20h</td>
+            <td>Básico</td>
+          </tr>
+          <tr>
+            <td>Padrões Arquiteturais e Princípios de Projeto</td>
+            <td>25h</td>
+            <td>Intermediário</td>
+          </tr>
+          <tr>
+            <td>Integração de Sistemas e Microsserviços</td>
+            <td>25h</td>
+            <td>Intermediário</td>
+          </tr>
+          <tr>
+            <td>Segurança em Arquitetura de Software</td>
+            <td>15h</td>
+            <td>Avançado</td>
+          </tr>
+          <tr>
+            <td>Projeto Prático de Arquitetura</td>
+            <td>15h</td>
+            <td>Avançado</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <a href="certificado.html" class="botao">Matricular Agora</a>
 
   </main>
-  <footer class="footer">
+  <footer>
+    <div id="banner-rodape">
+      <h3 class="chamada-rodape">Plataforma com maior crescimento do Brasil!</h3>
+      <img src="/imagens/logositemediano.png" alt="logo-plataforma.png" class="logo-rodape">
 
+      <ul class="areas-rodape">
+          <li class="subtitulo-rodape">Nossas Áreas</li>
+          <li class="opcoes-rodape">Cursos</li>
+          <li class="opcoes-rodape">Árvore de Aprendisagem</li>
+          <li class="opcoes-rodape">Certificado</li>
+      </ul>
+
+      <ul class="areas-rodape">
+          <li class="subtitulo-rodape">Sobre</li>
+          <li class="opcoes-rodape">Fale Conosco</li>
+          <li class="opcoes-rodape">Ajuda</li>
+          <li class="opcoes-rodape">Perguntas Frequentes</li>
+      </ul>
+
+      <ul class="areas-rodape">
+          <li class="subtitulo-rodape">Institucional</li>
+          <li class="opcoes-rodape">Documentos Institucionais</li>
+          <li class="opcoes-rodape">Eventos</li>
+          <li class="opcoes-rodape">Perguntas Frequêntes</li>
+      </ul>
+    </div>
   </footer>
 </body>
+</html>

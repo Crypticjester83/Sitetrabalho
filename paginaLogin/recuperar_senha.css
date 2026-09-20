@@ -1,3 +1,5 @@
+/*####################################### RECUPERAR SENHA #######################################*/
+
 .login-recuperar-senha {
     width: 600px;
     height: auto;
@@ -61,7 +63,9 @@
     color: #ffffff;
 }
 
-.logo-rodape {
+/*####################################### LOGO RODAPE #######################################*/
+
+#logo-recuperar-senha {
     width: 90px;
     height: auto;
     object-fit: contain;

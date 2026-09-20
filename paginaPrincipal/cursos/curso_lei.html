@@ -1,48 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Page Title</title>
+  <title>Linguagem Extrangeira (Inglês)</title>
 
+  <link rel="icon" href="/imagens/logositepequeno.png">
   <link rel="stylesheet"
     type="text/css"
-    href="./cursos_styles.css">
-    <link rel="stylesheet" href="../../geral.css">
+    href="/paginaPrincipal/cursos/cursos_styles.css">
+    <link rel="stylesheet" href="/geral.css">
 </head>
 <body>
-  <header class="navegacao">
+    <header class="navegacao">
         <nav>
-            <img src="../imagens/logosite.png" alt="logo-site.png" class="logo-cabecario">
-            <ul class="menu"> <!--"menu é referente a lista de itens do rodapé da pagina principal"-->
-                <li class="item-menu"><a href="../paginaprincipal.html">Página Principal</a></li>
-                <li class="item-menu"><a href="arvoredeaprendizagem.html">Árvore de Aprendizagem</a></li>
+            <img src="/imagens/logosite.png" alt="logo-site.png" class="logo-cabecario">
+            <ul class="menu"> <!--"menu é referente a lista de itens do cabeçario da pagina principal"-->
+                <li class="item-menu"><a href="/paginaPrincipal/paginaprincipal.html">Página Principal</a></li>
+                <li class="item-menu"><a href="/paginaArvoreCursos/pagina-arvore-cursos.html">Árvore de Aprendizagem</a></li>
                 <li class="item-menu"><a href="certificado.html">Peça seu Certificado</a></li>
-                <li class="item-menu"><a href="../../cursos/cursos.html">Cursos</a></li>
-                <li class="item-menu"><a href="../../paginaLogin/login.html">Login</a></li>
+                <li class="item-menu"><a href="/cursos/cursos.html">Cursos</a></li>
                 <li class="item-menu"><a href="sobre.html">Sobre</a></li>
+                <li class="item-menu"><a href="/paginaLogin/login.html">Login</a></li>
             </ul>
         </nav>
-  </header>
+    </header>
 
   <main class="main">
     <h1 class="nome-curso">Linguagem Extrangeira (Ingles)</h1>
 
     <div class="stats">
         <div class="caixa">
-          <h1 class="info">1000h</h1>
+          <h3 class="info">100h</h3>
           <h4 class="subinfo">Carga horaria</h4>
         </div>
         <div class="caixa">
-          <h1 class="info">12474</h1>
+          <h3 class="info">12474</h3>
           <h4 class="subinfo">Alunos</h4>
         </div>
         <div class="caixa">
-          <h1 class="info">7,0</h1>
+          <h3 class="info">7,0</h3>
           <h4 class="subinfo">Nota media</h4>
         </div>
         <div class="caixa">
-          <h1 class="info">10</h1>
+          <h3 class="info">10</h3>
           <h4 class="subinfo">Matérias</h4>
         </div>
     </div>
@@ -58,11 +60,82 @@
       </div>
     </div>
     
-    <div class = HolderBotao>
-      <div class = botao>Matricular Agora</div>
+    <!--####################################### GRADE CURRICULAR #######################################-->
+    <div class="grade-cursos">
+      <h1 class="titulo-grade">Grade Curricular</h1>
+      <table class="tabela-grade">
+        <thead>
+          <tr>
+            <th>Módulo</th>
+            <th>Carga Horária</th>
+            <th>Nível</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Vocabulário Essencial</td>
+            <td>20h</td>
+            <td>Básico</td>
+          </tr>
+          <tr>
+            <td>Gramática Fundamental</td>
+            <td>20h</td>
+            <td>Básico</td>
+          </tr>
+          <tr>
+            <td>Compreensão Auditiva (Listening)</td>
+            <td>15h</td>
+            <td>Intermediário</td>
+          </tr>
+          <tr>
+            <td>Conversação</td>
+            <td>15h</td>
+            <td>Intermediário</td>
+          </tr>
+          <tr>
+            <td>Leitura e Interpretação de Textos</td>
+            <td>15h</td>
+            <td>Intermediário</td>
+          </tr>
+          <tr>
+            <td>Escritura e Preparação para Certificados</td>
+            <td>15h</td>
+            <td>Avançado</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
+
+    <a href="certificado.html" class="botao">Matricular Agora</a>
+
   </main>
-  <footer class="footer">
+  <footer>
+    <div id="banner-rodape">
+      <h3 class="chamada-rodape">Plataforma com maior crescimento do Brasil!</h3>
+      <img src="/imagens/logositemediano.png" alt="logo-plataforma.png" class="logo-rodape">
+
+      <ul class="areas-rodape">
+          <li class="subtitulo-rodape">Nossas Áreas</li>
+          <li class="opcoes-rodape">Cursos</li>
+          <li class="opcoes-rodape">Árvore de Aprendisagem</li>
+          <li class="opcoes-rodape">Certificado</li>
+      </ul>
+
+      <ul class="areas-rodape">
+          <li class="subtitulo-rodape">Sobre</li>
+          <li class="opcoes-rodape">Fale Conosco</li>
+          <li class="opcoes-rodape">Ajuda</li>
+          <li class="opcoes-rodape">Perguntas Frequentes</li>
+      </ul>
+
+      <ul class="areas-rodape">
+          <li class="subtitulo-rodape">Institucional</li>
+          <li class="opcoes-rodape">Documentos Institucionais</li>
+          <li class="opcoes-rodape">Eventos</li>
+          <li class="opcoes-rodape">Perguntas Frequêntes</li>
+      </ul>
+    </div>
 
   </footer>
 </body>
+</html>

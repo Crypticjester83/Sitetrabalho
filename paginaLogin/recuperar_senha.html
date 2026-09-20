@@ -5,22 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recuperar Senha</title>
 
-    <link rel="icon" href="../imagens/logosite.png">
+    <link rel="icon" href="/imagens/logosite.png">
     <link rel="stylesheet"
     type="text/css"
-    href="./recuperar_senha.css">
+    href="/recuperar_senha.css">
     <link rel="stylesheet"
     type="text/css"
-    href="../geral.css">
+    href="/geral.css">
     <link rel="stylesheet"
     type="text/css"
-    href="./geral-login.css">
+    href="/geral-login.css">
 </head>
 
 <body>
     <header class="navegacao">
         <nav>
-            <img src="../imagens/logosite.png" alt="logo-site.png" class="logo-cabecario">
+            <img src="/imagens/logosite.png" alt="logo-site.png" class="logo-cabecario">
             <ul class="menu"> <!--"menu é referente a lista de itens do cabeçario da pagina principal"-->
                 <li class="item-menu"><a href="/paginaPrincipal/paginaprincipal.html">Página Principal</a></li>
                 <li class="item-menu"><a href="/paginaArvoreCursos/pagina-arvore-cursos.html">Árvore de Aprendizagem</a></li>
@@ -34,12 +34,12 @@
 
     <main class="main">
         <div class="login-recuperar-senha">
-            <img src="../imagens/logositemediano.png" alt="logo-site.png" class="logo-rodape">
+            <img src="/imagens/logositemediano.png" alt="logo-site.png" id="logo-recuperar-senha">
             <h1>Problemas na conta?</h1>
             <p id="texto-recuperar-senha">Insira seu email ou nome de usuário e clique em "Redefinir Senha" para receber um link para redefinir sua senha.</p>
             <form action="recuperar-senha.html" method="post" class="form-recuperar-senha">
                 <label for="email" class="recuperar">Nome de usuário ou email</label>
-                <input type="text" name="email" placeholder="Nome de usuario ou email"  required>
+                <input type="text" name="email" placeholder="Nome de usuario ou email"  id="email" required>
                 <div class="linha">
                     <button class="botao-recuperar-senha" type="submit">Redefinir Senha</button>
                 </div>
@@ -47,3 +47,4 @@
         </div>
     </main>  
 </body>
+</html>
