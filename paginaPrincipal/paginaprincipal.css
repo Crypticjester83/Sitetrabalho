@@ -1,5 +1,7 @@
 /* O banner-inicial é referente a primeira seção da página principal, onde fica o título e subtítulo da página*/
 
+/*####################################### Banner Inicial #######################################*/
+
 #banner-inicial {
     display: flex;
     flex-direction: column;
@@ -46,14 +48,15 @@
     color: #ffffff;
 }
 
-/*é referente a seção de cursos Populares, onde ficam os cards com os cursos*/
+
+/*####################################### Cursos Populares #######################################*/
 
 .lista-cards {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-between; /*Essa parte é apenas para deixar os cards lado a lado, foi amplamente usado nesse site o Flexbox, o flex-wrap ajuda bastante a deixar eles de lado a lado*/
 }
 
 .card {
@@ -103,7 +106,7 @@
 }
 
 
-
+/*####################################### BANNER RECURSOS #######################################*/
 
 .banner-pagina{
     width: 100%;
@@ -118,7 +121,7 @@
     
 }
 
-#chamada-recursos,#descricao-recursos,.lista-pagina, #chamada-cursos, #paragrafo-cursos {
+#chamada-recursos,#descricao-recursos,.lista-pagina, #chamada-cursos, #paragrafo-cursos { /*Isso é pra ajustar onde o texto vai no Banner*/
         width: 75%;
 }
 
@@ -150,7 +153,7 @@
     font-weight: bold;
 }
 
-
+/*####################################### BANNER COMUNIDADE #######################################*/
 
 .descricao-curso {
     font-size: 15px;
@@ -218,7 +221,9 @@
     padding: 0;
 }
 
-.logo-rodape {
+/*####################################### RODAPE #######################################*/
+
+.logo-rodape { /*essa parte é só pra ajustar a logo no rodape*/
     width: 90px;
     height: auto;
     object-fit: contain;
@@ -227,7 +232,7 @@
 }
 
 
-
+/*####################################### BANNER CURSOS #######################################*/
 
 #chamada-cursos {
     color: white;
@@ -243,7 +248,7 @@
     font-weight: lighter;
 }
 
-
+/*####################################### AVALIAÇÕES #######################################*/
 
 #avaliacao {
     background-color: #004409;
