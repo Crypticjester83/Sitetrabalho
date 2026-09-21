@@ -1,5 +1,3 @@
-/* Rodape da página principal */
-
 * { box-sizing: border-box; }
 
 /*"item menu referente aos itens no cabeçario da pagina principal"*/
@@ -141,7 +139,7 @@ footer {
     margin-top: 30px;
 }
 
-.logo-rodape { /*essa parte é só pra ajustar a logo no rodape*/
+.logo-rodape { 
     width: 90px;
     height: auto;
     object-fit: contain;

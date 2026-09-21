@@ -11,6 +11,7 @@ p {
 
 label {
     align-self: flex-start;
+    color: #ffffff;
 }
 
 input[type="text"], input[type="password"] {
