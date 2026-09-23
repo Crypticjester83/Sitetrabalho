@@ -219,17 +219,6 @@
     padding: 0;
 }
 
-/*####################################### RODAPE #######################################*/
-
-.logo-rodape { /*essa parte é só pra ajustar a logo no rodape*/
-    width: 90px;
-    height: auto;
-    object-fit: contain;
-    align-self: center;
-    flex-shrink: 0;
-}
-
-
 /*####################################### BANNER CURSOS #######################################*/
 
 #chamada-cursos {
@@ -246,13 +235,6 @@
     font-weight: lighter;
 }
 
-/*####################################### AVALIAÇÕES #######################################*/
-
-#avaliacao {
-    background-color: #004409;
-    padding: 30px;
-}
-
 .lista-curso {
     display: flex;
     flex-wrap: wrap;
@@ -260,19 +242,33 @@
     list-style-type:disc;
 }
 
-.lista-cards-avaliacao {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 15px;
-    width: 100%;
+/*####################################### AVALIAÇÕES #######################################*/
+
+#avaliacao { /*Esse aqui é só uma id para diferenciar a cor e o padding desse banner dos outros da pagina*/
+    background-color: #004409;
+    padding: 30px;
 }
 
-.card-avaliacao {
+.lista-cards-avaliacao {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+.card-avaliacao { /*Esse é o que delimita os tamanhos dos cards e como eles se distribuem na div para evitar espaços vazios*/
     background-color:#008612;
     border-radius: 25px;
     padding: 20px 25px 20px 25px;
     display: flex;
     align-items: stretch;
+    width: 300px;
+    flex: 1; /*Esse aqui é pra ajustar os cards no tamanho da div no banner*/
+    min-width: 250px; /*Esse aqui ajusta o tamanho minimo dos cards no banner*/
+    box-sizing: border-box;
 }
 
 .corpo-card-avaliacao {

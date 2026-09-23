@@ -1,9 +1,27 @@
-/*####################################### RODAPE #######################################*/
-
-.logo-rodape { /*essa parte é só pra ajustar a logo no rodape*/
-    width: 90px;
+.banner-sobre{
+    width: auto;
     height: auto;
-    object-fit: contain;
-    align-self: center;
-    flex-shrink: 0;
+    border-radius: 10px;
+    padding: 16px;
+    background-color: #008612;
+    margin: 10px;
+    min-width: 250px;
+    box-sizing: border-box;
+    flex: 1;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+
+#lista-sobre{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+h2, h4{
+    color: white;
+    font-weight: lighter;
 }
