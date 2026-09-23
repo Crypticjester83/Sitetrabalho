@@ -99,3 +99,17 @@ h1 {
     align-self: flex-start;
     margin-left: 150px;
 }
+
+.linha { /*DIV QUE FAZ COM QUE ELE IGNORE O ALINHAMENTO EM COLUNA PARA DEIXAR LADO A LADO*/
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: flex-start;
+    gap: 10px;
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+}
