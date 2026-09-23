@@ -1,0 +1,9 @@
+/*####################################### RODAPE #######################################*/
+
+.logo-rodape { /*essa parte é só pra ajustar a logo no rodape*/
+    width: 90px;
+    height: auto;
+    object-fit: contain;
+    align-self: center;
+    flex-shrink: 0;
+}
